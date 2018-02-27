@@ -9,7 +9,6 @@ if [ $# -eq 0 ]; then
    exit -1
 fi
 
-echo "Flashing $BOARD"
 
 if [ ! -d "$DIRPATH/$BOARD" ]; then
   echo "ERROR: No such path: $DIRPATH/$BOARD"
@@ -18,11 +17,14 @@ fi
 
 pushd $DIRPATH/$BOARD > /dev/null
 
-IMGS="boot.img.xz system.img.xz cache.img.xz userdata.img.xz dt.img.xz"
+echo "Extracting images"
+
+IMGS="boot.img system.img cache.img userdata.img dt.img"
 for i in $IMGS; do
-  xz -d $i
+  xz -k -d $i.xz
 done
 
+echo "Flashing $BOARD"
 #special case for hikey960 dts partition
 if [$BOARD -eq "hikey960" ] ; then
    fastboot flash dts dt.img
@@ -33,5 +35,9 @@ fastboot flash system system.img
 # we skip flashing userdata here
 
 fastboot reboot
+
+#cleanup
+rm -f $IMGS
+
 popd >/dev/null
 
