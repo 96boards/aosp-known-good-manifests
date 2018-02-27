@@ -5,23 +5,22 @@ Where "known-good" means that basic functionality has been checked and it should
 
 To use:
 
-1) Download the manifest file you'd like to use.
+1) Go to your already checked out AOSP TOP_DIR
 
-2) Go to your already checked out AOSP TOP_DIR
+2) Download the known-good manifest you wish to use.
 
 3) Initialize & sync the repo using the manifest:
 
-    `repo init -m <manifest>.xml`
+    `repo sync -j24 -m <MANIFEST>.xml`
     
-    `repo sync -j24`
-
 4) Then proceed to build.
 
-Or alteratively, if you want to do this w/o downloding a file, you can
-get the latest known good via a single command:
 
-    repo init -u https://github.com/johnstultz-work/known-good-manifests -m <BOARD>.xml
+To switch back to AOSP/master:
 
-Then run:
+1) Go to your already checked out AOSP TOP_DIR
 
-    repo sync -j24
+2) Re-Initialize and sync the repo using the AOSP/master manifest:
+
+    `repo sync -j24`
+
