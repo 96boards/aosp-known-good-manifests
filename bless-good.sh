@@ -42,4 +42,7 @@ mkdir -p known-good/$BOARD
 cp $DIRPATH/$BOARD/$NEW_MANIFEST known-good/$BOARD/
 cp $DIRPATH/$BOARD/$NEW_BUILD_URL_FILE known-good/$BOARD/
 
+rm -f $BOARD.xml
+ln -s known-good/$BOARD/$NEW_MANIFEST $BOARD.xml
+
 echo "No don't forget to commit the files!"
