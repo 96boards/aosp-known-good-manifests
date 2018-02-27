@@ -1,0 +1,1 @@
+https://builds.96boards.org/snapshots/hikey960/linaro/aosp-master/425/
