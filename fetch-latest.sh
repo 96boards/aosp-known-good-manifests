@@ -6,10 +6,10 @@ LICENCED_FILE_LIST="system.img.xz"
 BOARDS_LIST="hikey hikey960"
 IMG_DIR=imgs
 
-mkdir $IMG_DIR
+mkdir -p $IMG_DIR
 cd $IMG_DIR
 for board in $BOARDS_LIST; do
-  mkdir $board
+  mkdir -p $board
   cd $board
   rm -f $FILE_LIST
 
