@@ -10,11 +10,11 @@ To use:
 2) Download the known-good manifest you wish to use.
    Manifests can be found under the board directories here:
 
-     `https://github.com/johnstultz-work/known-good-manifests/tree/master/known-good`
+     [`https://github.com/johnstultz-work/known-good-manifests/tree/master/known-good`](https://github.com/johnstultz-work/known-good-manifests/tree/master/known-good)
 
    And the latest known-good manifest can be accessed via:
 
-     `https://github.com/johnstultz-work/known-good-manifests/tree/master/latest/<BOARD>.xml`
+     [`https://github.com/johnstultz-work/known-good-manifests/tree/master/latest/<BOARD>.xml`](https://github.com/johnstultz-work/known-good-manifests/tree/master/latest/)
 
 3) Initialize & sync the repo using the manifest:
 
