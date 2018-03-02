@@ -5,7 +5,14 @@ Where "known-good" means that basic functionality has been checked and it should
 
 To use:
 
-1) Go to your already checked out AOSP TOP_DIR
+1) Go to your already checked out AOSP TOPDIR
+   * If you need help setting up a build environment and checking out the AOSP source, please refer to the AOSP instructions here:
+   
+       [`https://source.android.com/setup/requirements`](https://source.android.com/setup/requirements)
+
+   * Also review the instruction details specifically for devboards:
+
+       [`https://source.android.com/setup/devices`](https://source.android.com/setup/devices)
 
 2) Download the known-good manifest you wish to use.
    Manifests can be found under the board directories here:
