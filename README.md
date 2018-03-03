@@ -1,4 +1,4 @@
-# known-good-manifests
+# aosp-known-good-manifests
 Snapshots of "known-good" AOSP manifests for various devboards
 
 Where "known-good" means that basic functionality has been checked and it should be ok for development work.
