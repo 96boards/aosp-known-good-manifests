@@ -26,7 +26,7 @@ done
 
 echo "Flashing $BOARD"
 #special case for hikey960 dts partition
-if [$BOARD -eq "hikey960" ] ; then
+if [ "$BOARD"  == "hikey960" ] ; then
    fastboot flash dts dt.img
 fi
 fastboot flash boot boot.img
