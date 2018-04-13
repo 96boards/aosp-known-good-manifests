@@ -19,7 +19,7 @@ pushd $DIRPATH/$BOARD > /dev/null
 
 echo "Extracting images"
 
-IMGS="boot.img system.img cache.img userdata.img dt.img"
+IMGS="boot.img system.img cache.img userdata.img dt.img vendor.img"
 for i in $IMGS; do
   xz -k -d $i.xz
 done
@@ -32,6 +32,7 @@ fi
 fastboot flash boot boot.img
 fastboot flash cache cache.img
 fastboot flash system system.img  
+fastboot flash vendor vendor.img
 # we skip flashing userdata here
 
 fastboot reboot

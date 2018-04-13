@@ -1,8 +1,8 @@
 #!/bin/bash
 
 SERVER="https://snapshots.linaro.org"
-FILE_LIST="boot.img.xz cache.img.xz userdata.img.xz"
-LICENCED_FILE_LIST="system.img.xz"
+FILE_LIST="boot.img.xz cache.img.xz userdata.img.xz dt.img.xz"
+LICENCED_FILE_LIST="system.img.xz vendor.img.xz"
 BOARDS_LIST="hikey hikey960"
 IMG_DIR=imgs
 
