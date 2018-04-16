@@ -1,9 +1,13 @@
 #!/bin/bash
 
+BOARDS_LIST=$1
+if [ $# -eq 0 ]; then
+   BOARDS_LIST="hikey hikey960"
+fi
+
 SERVER="https://snapshots.linaro.org"
 FILE_LIST="boot.img.xz cache.img.xz userdata.img.xz dt.img.xz"
 LICENCED_FILE_LIST="system.img.xz vendor.img.xz"
-BOARDS_LIST="hikey hikey960"
 IMG_DIR=imgs
 
 mkdir -p $IMG_DIR
