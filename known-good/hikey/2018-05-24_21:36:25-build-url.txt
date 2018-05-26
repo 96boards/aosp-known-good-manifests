@@ -1,0 +1,1 @@
+https://snapshots.linaro.org/96boards/hikey/linaro/aosp-master/827/
