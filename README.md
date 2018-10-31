@@ -23,18 +23,26 @@ To use:
 
      [`https://github.com/96boards/aosp-known-good-manifests/tree/master/latest/<BOARD>.xml`](https://github.com/96boards/aosp-known-good-manifests/tree/master/latest/)
 
-3) Initialize & sync the repo using the manifest:
+3) Copy known-good manifest to .repo/manifests/ dir
+
+   `cp <MANIFEST>.xml .repo/manifests/`
+
+4) Initialize & sync the repo using the manifest:
 
     `repo sync -j24 -m <MANIFEST>.xml`
     
-4) Then proceed to build.
+5) Then proceed to build.
 
 
 To switch back to AOSP/master:
 
 1) Go to your already checked out AOSP TOPDIR
 
-2) Re-Initialize and sync the repo using the AOSP/master manifest:
+2) Remove the known-good manifest
+
+   `rm .repo/manifests/<MANIFEST>.xml`
+
+3) Re-Initialize and sync the repo using the AOSP/master manifest:
 
     `repo sync -j24`
 
