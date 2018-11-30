@@ -6,7 +6,7 @@ if [ $# -eq 0 ]; then
 fi
 
 SERVER="https://snapshots.linaro.org"
-FILE_LIST="boot.img.xz cache.img.xz userdata.img.xz dt.img.xz"
+FILE_LIST="boot.img.xz userdata.img.xz dt.img.xz"
 LICENCED_FILE_LIST="system.img.xz vendor.img.xz"
 IMG_DIR=imgs
 
